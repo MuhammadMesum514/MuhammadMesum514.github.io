@@ -31,3 +31,23 @@ The featured project content lives in `index.html`. Add a new project card using
 ## Contact
 
 Mesumraza09@gmail.com
+
+
+## Custom domain: Namecheap
+
+For `muhammadmesum.site` (the apex/root domain), GitHub recommends `A` records rather than a normal CNAME at `@`:
+
+- `@` → `185.199.108.153`
+- `@` → `185.199.109.153`
+- `@` → `185.199.110.153`
+- `@` → `185.199.111.153`
+
+Optionally add IPv6 `AAAA` records using GitHub's documented values.
+
+For `www`, use:
+
+- Host: `www`
+- Type: `CNAME`
+- Value: `MuhammadMesum514.github.io`
+
+Remove conflicting `@` A/AAAA/CNAME/ALIAS records. GitHub Pages' custom-domain workflow does not require the repository CNAME file when deploying with GitHub Actions; the domain configured in Settings → Pages is what matters.
