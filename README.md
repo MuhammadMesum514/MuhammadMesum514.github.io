@@ -1,4 +1,4 @@
-# Muhammad Mesum — AI Engineer Portfolio V2.5
+# Muhammad Mesum — AI Engineer Portfolio V3.5
 
 Production-ready static portfolio for GitHub Pages.
 
@@ -51,3 +51,7 @@ For `www`, use:
 - Value: `MuhammadMesum514.github.io`
 
 Remove conflicting `@` A/AAAA/CNAME/ALIAS records. GitHub Pages' custom-domain workflow does not require the repository CNAME file when deploying with GitHub Actions; the domain configured in Settings → Pages is what matters.
+
+
+## V3.5
+Mobile-first navigation, responsive hero/system visualization, scroll reveal, animated network background, cursor-reactive ambient light, hover motion, and staged AI Lab animation. Motion respects `prefers-reduced-motion`.

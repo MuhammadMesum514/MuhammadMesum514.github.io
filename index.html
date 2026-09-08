@@ -20,12 +20,17 @@
 <div class="noise"></div>
 <header class="nav">
   <a class="brand" href="#top"><span class="dot"></span>MM<span class="muted">/</span>AI</a>
-  <nav>
+  <nav class="desktop-nav">
     <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#experience">Experience</a><a href="#lab">AI Lab</a><a href="#contact">Contact</a>
   </nav>
   <a class="nav-cta" href="mailto:Mesumraza09@gmail.com">Let's talk ↗</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">01 / Work</a><a href="#capabilities">02 / Capabilities</a><a href="#experience">03 / Experience</a><a href="#lab">04 / AI Lab</a><a href="#contact">06 / Contact</a>
+</div>
 
+<canvas id="networkCanvas" aria-hidden="true"></canvas>
 <main id="top">
 <section class="hero">
   <div class="hero-copy">
@@ -33,6 +38,7 @@
     <h1>I engineer<br><em>intelligent systems.</em></h1>
     <p class="lede">AI products, backend platforms, automation and infrastructure built for production — from document intelligence and agentic workflows to scalable APIs and SaaS systems.</p>
     <div class="actions"><a class="btn primary" href="#work">Explore selected work ↓</a><a class="btn" href="https://github.com/MuhammadMesum514" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+<div class="hero-terminal"><span>mesum@ai-engineer</span><b>:</b><code>~$ build --intelligent --production</code><i>_</i></div>
   </div>
   <div class="system-card">
     <div class="card-top"><span>SYSTEM / MESUM.AI</span><span class="status">● ONLINE</span></div>
@@ -44,6 +50,7 @@
     <div class="flow"><span>INPUT</span><b>→</b><span>REASON</span><b>→</b><span>EXECUTE</span><b>→</b><span>OUTPUT</span></div>
   </div>
 </section>
+<div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
 
 <section class="metrics" aria-label="Selected impact">
   <div><strong>5+</strong><span>years building software</span></div>
@@ -182,7 +189,7 @@
 <div class="modal" id="caseModal" aria-hidden="true">
   <div class="modal-backdrop" data-close></div>
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="caseTitle">
-    <button class="modal-close" data-close aria-label="Close">×</button>
+    <button class="modal-close" data-close aria-label="Close case study">×</button>
     <p class="eyebrow" id="caseTag">CASE STUDY</p>
     <h2 id="caseTitle">Project</h2>
     <p id="caseSummary" class="modal-summary"></p>
